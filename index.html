@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>People Management</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+</head>
+<body>
+	<h1>-People Management-</h1>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" placeholder="John"  pattern="^[^\d]*$" required title="Write your name like: John">
+		<label for="sex">Sex:</label>
+		<select name="cars" id="sex">
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select>
+		<label for="date">Birth date:</label>
+		<input type="date" name="calendar" id="date" required>
+		<label for="address">Address:</label>
+		<input type="text" name="address" id="address" placeholder="Lychakivska 15a" required>
+		<label for="phone">Phone:</label>
+		<input type="text" name="phone" id="phone" placeholder="+38(0XX)XXX-XX-XX" pattern="[\+]\d{2}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required title="Write smth like +38(0XX)XXX-XX-XX">
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" placeholder="admin@gmail.com" required>
+		<input type="submit" name="submit" value="Save">
+	</form>
+
+	<table id="table">
+		<tr>
+			<th>Name</th>
+			<th>Sex</th> 
+			<th>Birth date</th>
+			<th>Address</th>
+			<th>Phone</th>
+			<th>Email</th>
+		</tr>
+<!-- 		<tr class="data">
+			<td>Jill</td>
+			<td>Male</td>
+			<td>03/01/2017</td>
+			<td>Lychakivska 45a</td>
+			<td>+38(096)2416412</td>
+			<td>yourhurt09@gmail.com</td>
+		</tr>
+		<tr class="data">
+			<td>Sara</td>
+			<td>Female</td>
+			<td>03/01/2017</td>
+			<td>Naukova street 45a</td>
+			<td>+38(096)2416412</td>
+			<td>yourhurt09@gmail.com</td>
+		</tr>
+		<tr class="data">
+			<td>Jill</td>
+			<td>Male</td>
+			<td>03/01/2017</td>
+			<td>Lychakivska 45a</td>
+			<td>+38(096)2416412</td>
+			<td>yourhurt09@gmail.com</td>
+		</tr> -->
+	</table>
+
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>

@@ -1,0 +1,104 @@
+body {
+	background: url("../img/background.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+h1 {
+	font-size: 40px;
+	color:#fff;
+	text-shadow: 2px 2px  3px #1926ff;
+	text-align: center;
+	font-family: 'Poiret One', cursive;
+}
+
+form {
+	width: 25%;
+	margin-top: 10px;
+	margin-left: 30px;
+	text-align: center;
+	background-color: #fff;
+	padding: 20px 0;
+	border-radius: 5px;
+	opacity: 0.9;
+	float: left;
+}
+
+label {
+	text-align: center;
+	font-size: 20px;
+	color:#fff;
+	text-shadow: 2px 2px #000;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+select#sex {
+	display: block;
+	padding: 7px 10px;
+	margin: 0 auto;
+	border-radius: 5px;
+	font-size:18px;
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+	outline-color: yellow;
+	border:1px solid darkblue;
+}
+
+input[type="submit"] {
+	border-radius: 3px;
+	margin-top: 15px;
+	padding: 7px 15px;
+	font-size:20px;
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+	background-color: #7a7a7a;
+	color:#fff;
+	border:none;
+	outline-color: green;
+	transition: all 1.2s ease;
+	-webkit-transition: all 1.2s ease;
+}
+
+input[type="submit"]:hover {
+	background-color: #ccc;
+	color:#000;
+}
+
+table#table {
+	width: 65%;
+	float: right;
+	margin-top: 10px;
+	margin-right: 30px;
+	border-radius: 5px;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+table th {
+	padding: 20px;
+	font-size: 20px;
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+	background-color: #000bcc;
+	color:#fff;
+	/*opacity: 0.9;*/
+}
+
+table td  {
+   background-color: #fff;
+   color:#000;
+   opacity: 0.9;
+   padding: 10px;
+   font-size: 16px;
+   font-family: 'Poiret One', cursive;
+   font-weight: bold;
+   text-align: center;
+}
+
+table tr.data:hover {
+	opacity: 0.8;
+}
