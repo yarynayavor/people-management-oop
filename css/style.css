@@ -45,9 +45,9 @@ select#sex {
 	border:1px solid darkblue;
 }
 
-input[type="submit"] {
+input[type="submit"]  { 
 	border-radius: 3px;
-	margin-top: 15px;
+	margin-top: 25px;
 	padding: 7px 15px;
 	font-size:20px;
 	font-family: 'Poiret One', cursive;
@@ -55,14 +55,17 @@ input[type="submit"] {
 	background-color: #7a7a7a;
 	color:#fff;
 	border:none;
+	border:1px solid #7a7a7a;
 	outline-color: green;
 	transition: all 1.2s ease;
 	-webkit-transition: all 1.2s ease;
+	text-decoration: none;
 }
 
 input[type="submit"]:hover {
 	background-color: #ccc;
 	color:#000;
+	border:1px solid green;
 }
 
 table#table {
@@ -79,13 +82,12 @@ table, th, td {
 }
 
 table th {
-	padding: 20px;
+	padding: 15px;
 	font-size: 20px;
 	font-family: 'Poiret One', cursive;
 	font-weight: bold;
 	background-color: #000bcc;
 	color:#fff;
-	/*opacity: 0.9;*/
 }
 
 table td  {
