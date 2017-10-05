@@ -1,8 +1,23 @@
 function SuperUser() {
-	this.changeDataVisibility=function() {
-		//in progress
-	}
+	// this.changeDataVisibility=function(data) {
+	// 	if(this.isDataVisible) {
+	// 		$(data).removeClass( "hidden" ).addClass('visible');
+	// 	}
+	// 	else {
+	// 		$(data).removeClass( "visible" ).addClass('hidden');
+	// 	}
+	// }
 }
+
+SuperUser.prototype.changeDataVisibility=function() {
+	if(this.classList.contains('visible')){
+		this.isDataVisible=true;
+		return true;
+	} 
+	return false;
+}
+
+
 
 function User(name,sex,birthDate,address,phone,email) {
 	this.name=name;
@@ -22,7 +37,7 @@ var userArr=[];
 User.prototype.addUser=function (){ 
 	var tableId=document.getElementById('table');
 	var tableRow=tableId.insertRow(1);
-	tableRow.classList.add('data');
+	tableRow.classList.add('data','visible');
 	var cell1 = tableRow.insertCell(0);
 	var cell2 = tableRow.insertCell(1);
 	var cell3 = tableRow.insertCell(2);
@@ -75,7 +90,33 @@ $('input[type="submit"]').click(function (e) {
 			userArr.push(newInstanses);
 			userArr[userArr.length-1].addUser();
 			resetForm();
-		}
+
+			button=document.querySelectorAll('tr.data');
+	for (i = 0; i < button.length; i++) {
+		button[i].onclick= (function () {
+			var $item = $(this.childNodes);
+			for(var j=1;j<$item.length;j++) {
+				if($item[j].classList.contains('hide')) {
+					$($item[j]).removeClass('hide');
+					$($item[j]).addClass('show');
+				} 
+				else {
+					$($item[j]).removeClass('show');
+					$($item[j]).addClass('hide');
+				} 
+				$item[0].style.visibility='visible';
+			}
+			//this.style.visibility='hidden';
+			// $item.hide('slow', function() { 
+			// 	$item.remove(); 
+				
+			// });
+		});
+	}
+
+			}
+		
 		//console.log(userArr[userArr.length-1].length);
 	}
 });
+
