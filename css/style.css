@@ -105,22 +105,6 @@ table tr.data .visible {
 	visibility: visible;
 }
 
-.hide {
-	font-size: 0;
-	transition: all 1.2s ease;
-	-webkit-transition: all 1.2s ease;
-}
-
-.show {
-	font-size: 16px;
-	transition: all 1.2s ease;
-	-webkit-transition: all 1.2s ease;
-}
-
-table tr.data .hidden {
-	visibility: hidden;
-}
-
 table tr.data:hover {
 	opacity: 0.8;
 }
